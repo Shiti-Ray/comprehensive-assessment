@@ -1,0 +1,16 @@
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Date of Visit</th>
+            <th>Visited Doctor</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let patient of patients">
+            <td>{{patient.name}}</td>
+            <td>{{patient.dateOfVisit | date}}</td>
+            <td>{{patient.visitedDoctor}}</td>
+        </tr>
+    </tbody>
+</table>

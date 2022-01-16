@@ -1,0 +1,10 @@
+<div class = "col-md-6 offset-md-3">
+    <form>
+        <div class = "from-group">
+            <label>Enter Patient Id: </label>
+            <input type = "text" class = "form-control" id = "id" [(ngModel)] = "patient.id" name = "id">
+        </div>
+        <br />
+        <button (click) = "patientDetails(patient.id)" class = "btn btn-success">Submit</button>
+    </form>
+</div>

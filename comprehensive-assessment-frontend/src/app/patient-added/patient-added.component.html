@@ -1,0 +1,6 @@
+<div class = "container">
+    <h1><span style = "color:green">Appointment Booked Successfully!</span></h1>
+    <div *ngFor="let patient of patients; index as i; first as isFirst; last as isLast">
+        <span *ngIf="isLast">Your Patient Id is <b>{{patient.id}}</b></span>
+    </div>
+</div>
